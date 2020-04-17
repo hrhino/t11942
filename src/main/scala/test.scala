@@ -1,8 +1,9 @@
-package fnord
-import scala.scalajs._, js.annotation._
-@JSGlobal("Blah")
-@js.native
-object Blah extends js.Object {
+import scalajs.js.annotation._
+import scalajs.js
 
-  def blah(): Unit = js.native
+@js.native
+trait Eg extends js.Object {
+  var a: Boolean = js.native
+  val b: Boolean = js.native
+  def c(d: String = js.native): String  = js.native
 }
